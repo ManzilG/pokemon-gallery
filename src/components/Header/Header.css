@@ -1,0 +1,11 @@
+.header {
+    background-color: yellow;
+    width: 2100px;
+    height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
