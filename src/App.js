@@ -1,12 +1,24 @@
 import './App.css';
-import Header from "./components/Header/Header";
+import TopNav from "./components/TopNav/TopNav";
 import HomePage from "./components/HomePage/HomePage";
+import React from "react";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import * as PropTypes from "prop-types";
+import CoreText from "./components/CoreText/CoreText";
+
+class Item extends React.Component {
+    render() {
+        return null;
+    }
+}
+
+Item.propTypes = {children: PropTypes.node};
 
 function App() {
   return (
     <div className="App">
-        <Header/>
-        <HomePage/>
+        <CoreText text="POKEMON PINTEREST"/>
+        <TopNav/>
     </div>
   );
 }

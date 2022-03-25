@@ -3,20 +3,11 @@ import "./Card.css"
 
 const Card = (props) => {
 
-    const handleLikeClick = () => {
-        console.log("I liked it.....");
-    }
-
-    const handleDislikeClick = () => {
-        console.log("I disliked it.....");
-    }
-
-
     return (
         <div className="card">
             <img src = {props.src} />
-            <CoreButton onClick = {handleLikeClick} text = "+"/>
-            <CoreButton onClick = {handleDislikeClick} text = "-"/>
+            {props.handleLikeClick && <CoreButton onClick = {() => props.handleLikeClick(props.card)} text = "+"/>}
+            {props.handleLikeClick && <CoreButton onClick = {() => props.handleDislikeClick(props.card)} text = "-"/>}
         </div>
     );
 }

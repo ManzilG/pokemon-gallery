@@ -3,18 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import HomePage from "./components/HomePage/HomePage";
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<App />} />
-                <Route path="homepage" element={<HomePage/>} />
-                <Route path="gallery" element={<div>Hello</div>} />
-            </Routes>
-        </BrowserRouter>
+        <App/>
     </React.StrictMode>,
     document.getElementById('root')
 );
